@@ -6,7 +6,7 @@ const LandingPage = () => {
   return (
     <>
       <CssBaseline />
-      <Box maxWidth="xl" sx={{ bgcolor: "#54bc31",width: "100%", display: "flex", flexDirection: "column" }}>
+      <Box maxWidth="xl" sx={{width: "100%", display: "flex", flexDirection: "column" }}>
        <HeroComponent/>
       </Box>
     </>

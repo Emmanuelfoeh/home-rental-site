@@ -9,10 +9,22 @@ const useStyles = makeStyles()((theme) => {
       alignItems: "center",
       height: "100vh",
       paddingTop:"1rem",
-      color: theme.palette.primary.main,
+      // color: theme.palette.primary.main,
       backgroundImage: "url(/img/hero_img.png)",
       backgroundSize: "cover",
+      position: "relative",
     //   backgroundRepeat: "no-repeat",
+    '&:after':{
+      content: '""',
+      backgroundColor: 'black',
+      height:"100%",
+      opacity:"0.2",
+      width:"100%",
+      position: "absolute",
+      top: "0",
+      zIndex:'0',
+
+    }
     },
     apply: {
       marginRight: theme.spacing(2),
