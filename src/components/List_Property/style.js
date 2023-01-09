@@ -13,13 +13,13 @@ const useStyles = makeStyles()((theme) => {
       "& h4": {
         marginTop: "0",
         marginBottom: "0",
-        fontSize:"2rem",
-        fontWeight:"600",
+        fontSize: "2rem",
+        fontWeight: "600",
       },
     },
     viewBtn: {
       backgroundColor: "#F4511E",
-      padding:"0.8rem",
+      padding: "0.8rem",
       "&:hover": {
         backgroundColor: "#c33306",
       },
@@ -27,11 +27,12 @@ const useStyles = makeStyles()((theme) => {
 
     cardBox: {
       display: "grid",
-      gridTemplateColumns: "358px 358px 358px",
-      justifyContent: "center",
-      columnGap: "1rem",
-      rowGap: "2rem",
-      //   backgroundColor:"brown",
+      gridTemplateColumns: "repeat(auto-fit, minmax(358px,1fr))",
+      // gridTemplateColumns: "1fr 1fr 1fr",
+      // justifyContent: "space-between",
+      columnGap: "1.5rem",
+      rowGap: "2.5rem",
+      // backgroundColor:"brown",
     },
 
     cardFooter: {
@@ -49,6 +50,27 @@ const useStyles = makeStyles()((theme) => {
         marginBottom: "0",
         border: "0.5px solid gray",
       },
+    },
+    pagination: {
+      display: "flex",
+      // justifySelf:"center",
+      width: "250px",
+      height: "50px",
+      margin: "2rem auto",
+      backgroundColor: "red",
+    },
+    num: {
+      width: "40px",
+    },
+    activePage: {
+      backgroundColor: "#F4511E",
+      border:"none",
+    },
+    prev: {
+      width: "70px",
+    },
+    next: {
+      width: "70px",
     },
   };
 });

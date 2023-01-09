@@ -3,6 +3,7 @@ import React from 'react'
 import HeroComponent from '../components/hero_section/HeroComponent';
 import Service from '../components/service/Service';
 import ListProperty from '../components/List_Property/ListProperty';
+import LifeStyle from '../components/LifeStyle/LifeStyle';
 
 const LandingPage = () => {
   return (
@@ -12,6 +13,7 @@ const LandingPage = () => {
        <HeroComponent/>
        <Service/>
        <ListProperty/>
+       <LifeStyle/>
       </Box>
     </>
   );

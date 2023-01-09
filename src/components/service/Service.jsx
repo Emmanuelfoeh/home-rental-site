@@ -11,7 +11,7 @@ const Service = () => {
     <div className={classes.serviceContainer}>
       <Box
         sx={{
-          width: "90%",
+          width: "85%",
           display: "flex",
           flexDirection: "column",
           // bgcolor:"brown",

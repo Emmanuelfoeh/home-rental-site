@@ -11,7 +11,7 @@ const HeroComponent = () => {
     <div className={classes.heroContainer}>
       <Box
         sx={{
-          width: "90%",
+          width: "85%",
           display: "flex",
           flexDirection: "column",
           position: "relative",

@@ -11,7 +11,7 @@ const ListProperty = () => {
     <div className={classes.listPropertyContainer}>
       <Box
         sx={{
-          width: "90%",
+          width: "85%",
           display: "flex",
           flexDirection: "column",
           // bgcolor:"brown",
@@ -32,6 +32,15 @@ const ListProperty = () => {
           <PropertyCard image={`img/card4.png`} />
           <PropertyCard image={`img/card5.png`} />
           <PropertyCard image={`img/card6.png`} />
+        </div>
+        <div className={classes.pagination}>
+          <button className={classes.prev}>Prev</button>
+          <button className={` ${classes.num} ${classes.activePage} `}>
+            1
+          </button>
+          <button className={classes.num}>2</button>
+          <button className={classes.num}>3</button>
+          <button className={classes.next}>Next</button>
         </div>
       </Box>
     </div>
