@@ -50,8 +50,8 @@ const NewProperty = ({ value }) => {
                 <label className={classes.formLabel} htmlFor="textArea">
                   Description
                 </label>
-                <textarea id="textArea" className={classes.textAreaField}>
-                  this is the text area
+                <textarea id="textArea" defaultValue={`type here`} className={classes.textAreaField}>
+                  
                 </textarea>
               </div>
               <StyledDropzone />

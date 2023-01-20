@@ -8,8 +8,15 @@ const useStyles = makeStyles()((theme) => {
       marginRight: "2rem",
     },
     map: {
+      width:"340px",
+      height:"240px",
       borderRadius: "30px",
+      // border:"1px solid black",
       overflow: "hidden,",
+      "& img":{
+        width:"100%",
+        height:"100%",
+      },
     },
     selectInput1: {
       width: "30%",
