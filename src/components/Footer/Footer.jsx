@@ -32,9 +32,7 @@ const Footer = () => {
           style={{ width: "100%", height: "2px", backgroundColor: "#F4511E" }}
         ></span>
         <div className={classes.logoSocial}>
-          <Box
-            className={classes.footLogo}
-          >
+          <Box className={classes.footLogo}>
             <img
               className={classes.footLogoSelf}
               style={{ color: "green" }}
@@ -44,11 +42,12 @@ const Footer = () => {
             />
           </Box>
           <div className={classes.social}>
-            <div className={classes.socialItem} style={{ padding: "1rem 0" }}>
+            <div className={classes.socialItem} style={{ padding: "1rem 0",display:"flex",alignItems:"center" }}>
               <FmdGoodIcon
                 style={{ marginRight: "0.5rem", color: "#F4511E" }}
               />{" "}
-              345 Faulconer Drive, Suite 4 • Charlottesville, CA, 12345
+              <span>345 Faulconer Drive, Suite 4 • Charlottesville, CA, 12345</span>
+              
             </div>
             <div
               className={classes.socialItem}
@@ -75,7 +74,7 @@ const Footer = () => {
               <span style={{ marginRight: "1rem", padding: "1rem 0" }}>
                 SocialMedia
               </span>
-              <span>
+              <span style={{ display: "flex" }}>
                 <FacebookIcon
                   style={{ marginRight: "1.5rem", color: "#F4511E" }}
                 />

@@ -5,6 +5,15 @@ const useStyles = makeStyles()((theme) => {
     LifeStyleContainer: {
       padding: "3rem 0",
     },
+    LifeStyleBox: {
+      display: "flex",
+      margin: "0 auto",
+      width: "85%",
+      [theme.breakpoints.down("sm")]: {
+        flexDirection: "column",
+        // backgroundColor:"green",
+      },
+    },
     stylePicture: {
       display: "flex",
       flex: "50%",
@@ -74,11 +83,11 @@ const useStyles = makeStyles()((theme) => {
 
     styleText: {
       display: "flex",
-      alignItems:"start",
+      alignItems: "start",
       justifyContent: "center",
       flex: "50%",
       flexDirection: "column",
-      marginLeft:"2rem",
+      marginLeft: "2rem",
 
       "& h2": {
         width: "400px",

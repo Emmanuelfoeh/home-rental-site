@@ -7,12 +7,7 @@ const LifeStyle = () => {
   return (
     <div className={classes.LifeStyleContainer}>
       <Box
-        sx={{
-          width: "85%",
-          display: "flex",
-          //   flexDirection: "column",
-          margin: "0 auto",
-        }}
+        className={classes.LifeStyleBox}
       >
         <div className={classes.stylePicture}>
           <div className={classes.firstPics}>

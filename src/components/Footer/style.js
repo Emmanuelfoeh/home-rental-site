@@ -15,6 +15,9 @@ const useStyles = makeStyles()((theme) => {
       padding: "3rem 4rem",
       // backgroundColor: "blue",
       columnGap: "2rem",
+      [theme.breakpoints.down("sm")]: {
+        flexDirection: "column",
+      },
     },
 
     footerNav: {
@@ -23,6 +26,9 @@ const useStyles = makeStyles()((theme) => {
       alignItems: "center",
       borderTop: "2px solid #7BB9FC",
       width: "100%",
+      [theme.breakpoints.down("sm")]: {
+        flexDirection: "column",
+      },
     },
     footLogo: {
       width: "18rem",

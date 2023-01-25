@@ -11,26 +11,28 @@ const Testimonial = () => {
         sx={{
           width: "85%",
           display: "flex",
-          height: "100%",
+          // height: "100%",
           // flexDirection: "column",
           // bgcolor:"brown",
           margin: "0 auto",
         }}
+        className={classes.carouselTestContainer}
       >
         <div className={classes.carousel}>
-          <p style={{ width: "80%", position: "relative" }}>
+          <div className={classes.carouselInner} style={{ width: "80%", position: "relative" }}>
             <img
               src="/img/quote.svg"
               alt="quote"
               style={{ width: "24px", height: "24px", marginRight: "5px" }}
             />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
             interdum nisl et nunc facilisis, a commodo eros mollis. Nunc vel
             pellentesque est. Curabitur at odio sit amet libero vulputate
             efficitur ac nec justo. Nulla vitae mauris quam. Nulla quam massa,
             faucibus id pretium ac, mattis eu velit. Donec sed risus a lacus
-            fringilla finibus.
-          </p>
+            fringilla finibus.</p>
+            
+          </div>
 
           <div
             style={{
