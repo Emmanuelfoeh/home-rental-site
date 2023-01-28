@@ -25,6 +25,12 @@ const useStyles = makeStyles()((theme) => {
       display: "flex",
       alignItems: "end",
       columnGap: "1.5rem",
+      [theme.breakpoints.down("sm")]: {
+        flexDirection: "column",
+        alignItems: "center",
+        rowGap: "1.5rem",
+        // backgroundColor:"green",
+      },
     },
 
     firstPicsContainer1: {
@@ -36,6 +42,9 @@ const useStyles = makeStyles()((theme) => {
       backgroundSize: "cover",
       "& p": {
         color: "white",
+        [theme.breakpoints.down("sm")]: {
+          fontSize: "1.5rem",
+        },
       },
     },
 
@@ -48,6 +57,11 @@ const useStyles = makeStyles()((theme) => {
       backgroundSize: "cover",
       "& p": {
         color: "white",
+        [theme.breakpoints.down("sm")]: {
+          fontSize: "1.5rem",
+          textAlign: "center",
+          fontWeight: "bold",
+        },
       },
     },
 
@@ -55,6 +69,12 @@ const useStyles = makeStyles()((theme) => {
       display: "flex",
       alignItems: "start",
       columnGap: "1.5rem",
+      [theme.breakpoints.down("sm")]: {
+        flexDirection: "column",
+        alignItems: "center",
+        rowGap: "1.5rem",
+        // backgroundColor:"green",
+      },
     },
 
     secondPicsContainer1: {
@@ -66,6 +86,10 @@ const useStyles = makeStyles()((theme) => {
       backgroundSize: "cover",
       "& p": {
         color: "white",
+        [theme.breakpoints.down("sm")]: {
+          fontSize: "1.5rem",
+          textAlign: "center",
+        },
       },
     },
 
@@ -78,6 +102,9 @@ const useStyles = makeStyles()((theme) => {
       backgroundSize: "cover",
       "& p": {
         color: "white",
+        [theme.breakpoints.down("sm")]: {
+          fontSize: "1.5rem",
+        },
       },
     },
 
@@ -88,6 +115,9 @@ const useStyles = makeStyles()((theme) => {
       flex: "50%",
       flexDirection: "column",
       marginLeft: "2rem",
+      [theme.breakpoints.down("sm")]: {
+        marginLeft: "0",
+      },
 
       "& h2": {
         width: "400px",
@@ -95,12 +125,23 @@ const useStyles = makeStyles()((theme) => {
         fontWeight: "800",
         fontSize: "2rem",
         marginBottom: "0",
+        [theme.breakpoints.down("sm")]: {
+          width: "300px",
+          fontSize: "1.5rem",
+          height: "auto",
+          // textAlign: "center",
+        },
       },
 
       "& p": {
         width: "400px",
         fontSize: "1rem",
         fontWeight: "400",
+        [theme.breakpoints.down("sm")]: {
+          width: "330px",
+          fontSize: "1.2rem",
+          // textAlign: "center",
+        },
       },
     },
     btn: {

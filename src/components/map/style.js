@@ -6,16 +6,20 @@ const useStyles = makeStyles()((theme) => {
       display: "flex",
       flexDirection: "column",
       marginRight: "2rem",
+      [theme.breakpoints.down("sm")]: {
+        alignItems: "center",
+        marginRight: "0",
+      },
     },
     map: {
-      width:"340px",
-      height:"240px",
+      width: "340px",
+      height: "240px",
       borderRadius: "30px",
       // border:"1px solid black",
       overflow: "hidden,",
-      "& img":{
-        width:"100%",
-        height:"100%",
+      "& img": {
+        width: "100%",
+        height: "100%",
       },
     },
     selectInput1: {
@@ -43,6 +47,10 @@ const useStyles = makeStyles()((theme) => {
     inputBox: {
       display: "flex",
       backgroundColor: "#F9F9F9",
+      [theme.breakpoints.down("sm")]: {
+        width: "20rem",
+        marginTop: "0.5rem",
+      },
     },
   };
 });

@@ -23,16 +23,25 @@ const useStyles = makeStyles()((theme) => {
       "&:hover": {
         backgroundColor: "#c33306",
       },
+      [theme.breakpoints.down("sm")]: {
+        fontSize: "1rem",
+        padding: "0.1rem",
+      },
     },
 
     cardBox: {
       display: "grid",
-      gridTemplateColumns: "repeat(auto-fit, minmax(358px,1fr))",
+      gridTemplateColumns: "repeat(auto-fit, minmax(300px,1fr))",
       // gridTemplateColumns: "1fr 1fr 1fr",
       // justifyContent: "space-between",
       columnGap: "1.5rem",
       rowGap: "2.5rem",
       // backgroundColor:"brown",
+    },
+    privateRoom: {
+      [theme.breakpoints.down("sm")]: {
+        fontSize: "1.5rem",
+      },
     },
 
     cardFooter: {
@@ -64,7 +73,7 @@ const useStyles = makeStyles()((theme) => {
     },
     activePage: {
       backgroundColor: "#F4511E",
-      border:"none",
+      border: "none",
     },
     prev: {
       width: "70px",

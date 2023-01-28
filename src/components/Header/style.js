@@ -7,9 +7,18 @@ const useStyles = makeStyles()((theme) => {
       alignItems: "center",
       //   justifyContent: "space-between",
       borderBottom: "0.5px solid white",
+      [theme.breakpoints.down("sm")]: {
+        justifyContent: "space-between",
+        // backgroundColor:"green",
+      },
     },
     logo: {
       marginRight: theme.spacing(10),
+    },
+    hamburger: {
+      [theme.breakpoints.up("sm")]: {
+        display:"none",
+      },
     },
 
     navBar: {
@@ -19,6 +28,10 @@ const useStyles = makeStyles()((theme) => {
       width: "40%",
       height: "100%",
       marginLeft: "10rem",
+      [theme.breakpoints.down("sm")]: {
+        display: "none",
+        // backgroundColor:"green",
+      },
     },
 
     navItem: {

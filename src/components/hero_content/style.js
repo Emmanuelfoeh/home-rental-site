@@ -9,6 +9,12 @@ const useStyles = makeStyles()((theme) => {
       alignItems: "center",
       height: "60vh",
       marginTop: "4rem",
+      [theme.breakpoints.down("sm")]: {
+        flexDirection: "column",
+        alignItems: "center",
+        marginTop: "2rem",
+        // height: "30vh",
+      },
     },
     heroText: {
       display: "flex",
@@ -19,6 +25,12 @@ const useStyles = makeStyles()((theme) => {
       textTransform: "capitalize",
       letterSpacing: "-1px",
       //   backgroundColor: "brown",
+      [theme.breakpoints.down("sm")]: {
+        width: "100%",
+        fontSize: "2rem",
+        // fontWeight: "500",
+        // backgroundColor:"green",
+      },
     },
   };
 });

@@ -1,4 +1,5 @@
 import React from "react";
+import DehazeIcon from "@mui/icons-material/Dehaze";
 import useStyles from "./style";
 
 const Header = () => {
@@ -27,6 +28,7 @@ const Header = () => {
           Contact Us
         </a>
       </nav>
+<DehazeIcon className={classes.hamburger} sx={{color:"white"}}/>
     </header>
   );
 };

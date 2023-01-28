@@ -10,6 +10,8 @@ const useStyles = makeStyles()((theme) => {
       [theme.breakpoints.down("sm")]: {
         flexDirection: "column",
         alignItems: "center",
+        margin: "0 0",
+        width: "100%",
       },
     },
     carousel: {
@@ -17,14 +19,11 @@ const useStyles = makeStyles()((theme) => {
       flexDirection: "column",
       flex: "60%",
       order: "2",
-      // backgroundColor: "brown",
-      // justifyContent: "center",
       padding: "5rem 0",
       height: "100%",
-      // border: "1px solid red",
       [theme.breakpoints.down("sm")]: {
         width: "100%",
-        alignItems:"center",
+        alignItems: "center",
       },
     },
     carouselInner: {
@@ -32,12 +31,27 @@ const useStyles = makeStyles()((theme) => {
         width: "100%",
       },
 
-      "& p":{
- [theme.breakpoints.down("sm")]: {
-        width: "100%",
-      // backgroundColor:"green",
-      }
-      }
+      "& p": {
+        [theme.breakpoints.down("sm")]: {
+          width: "100%",
+          zIndex: 3,
+          // backgroundColor:"green",
+        },
+      },
+    },
+    carouselQuote: {
+      width: "30px",
+      height: "30px",
+      marginRight: "5px",
+      position: "absolute",
+      top: "0.6rem",
+      left: "-0.8rem",
+      zIndex: "-2",
+      [theme.breakpoints.down("sm")]: {
+       top:"1rem",
+       left:"-2rem",
+        // backgroundColor:"green",
+      },
     },
 
     TestVideo: {

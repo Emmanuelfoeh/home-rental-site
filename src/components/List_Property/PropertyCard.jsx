@@ -12,7 +12,7 @@ import useStyles from "./style";
 export default function PropertyCard({ image }) {
   const { classes } = useStyles();
   return (
-    <Card sx={{ borderRadius:"20px" }}>
+    <Card sx={{ borderRadius:"20px"}}>
       <CardActionArea>
         <CardMedia component="img" width="100%" image={image} alt="room 1" />
         <CardContent>
@@ -20,7 +20,7 @@ export default function PropertyCard({ image }) {
             2578 Folsom street, san francisco, CA, 94110
           </Typography>
 
-          <Typography variant="body2" fontSize="12px" color="text.secondary">
+          <Typography className={classes.privateRoom} variant="body2" fontSize="12px"  color="text.secondary">
             private room
           </Typography>
 

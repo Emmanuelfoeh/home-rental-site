@@ -23,7 +23,7 @@ const NewProperty = ({ value }) => {
           display: "flex",
           flexDirection: "column",
           // alignItems: "center",
-          // bgcolor:"brown",
+          // bgcolor:"brown", sx={{ minWidth: 679 }}
           margin: "0 auto",
         }}
       >
@@ -32,7 +32,7 @@ const NewProperty = ({ value }) => {
           Out!
         </h3>
 
-        <Box sx={{ minWidth: 679 }}>
+        <Box>
           <Card className={classes.card} variant="outlined">
             <h3 className={classes.formHeader}>Add new Property</h3>
             <form className={classes.form}>
@@ -50,12 +50,14 @@ const NewProperty = ({ value }) => {
                 <label className={classes.formLabel} htmlFor="textArea">
                   Description
                 </label>
-                <textarea id="textArea" defaultValue={`type here`} className={classes.textAreaField}>
-                  
-                </textarea>
+                <textarea
+                  id="textArea"
+                  defaultValue={`type here`}
+                  className={classes.textAreaField}
+                ></textarea>
               </div>
               <StyledDropzone />
-              <div style={{display:"flex", justifyContent:"center"}}>
+              <div style={{ display: "flex", justifyContent: "center" }}>
                 <Button variant="contained" className={classes.viewBtn}>
                   Add New Property
                 </Button>

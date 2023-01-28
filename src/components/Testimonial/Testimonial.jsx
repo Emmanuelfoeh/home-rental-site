@@ -19,44 +19,52 @@ const Testimonial = () => {
         className={classes.carouselTestContainer}
       >
         <div className={classes.carousel}>
-          <div className={classes.carouselInner} style={{ width: "80%", position: "relative" }}>
-            <img
-              src="/img/quote.svg"
-              alt="quote"
-              style={{ width: "24px", height: "24px", marginRight: "5px" }}
-            />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-            interdum nisl et nunc facilisis, a commodo eros mollis. Nunc vel
-            pellentesque est. Curabitur at odio sit amet libero vulputate
-            efficitur ac nec justo. Nulla vitae mauris quam. Nulla quam massa,
-            faucibus id pretium ac, mattis eu velit. Donec sed risus a lacus
-            fringilla finibus.</p>
-            
-          </div>
-
           <div
-            style={{
-              display: "flex",
-              alignSelf: "start",
-              alignItems: "center",
-              padding: "0.8rem 0",
-              // border: "1px solid black",
-            }}
+            className={classes.carouselInner}
+            style={{ width: "80%", position: "relative" }}
           >
-            <Avatar
-              alt="Joy"
-              src="/img/joy.jpg"
-              sx={{ marginRight: "0.7rem", border: "1px solid #F4511E" }}
+            <img
+              src="/img/quote-left.png"
+              alt="quote"
+              className={classes.carouselQuote}
             />
-            <div style={{ marginBottom: "0" }}>
-              <h6
-                style={{ margin: "0", fontSize: "0.9rem", fontWeight: "700" }}
-              >
-                Joy Drah
-              </h6>
-              <p style={{ margin: "0", fontSize: "0.7rem" }}>Property Owner</p>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+              interdum nisl et nunc facilisis, a commodo eros mollis. Nunc vel
+              pellentesque est. Curabitur at odio sit amet libero vulputate
+              efficitur ac nec justo. Nulla vitae mauris quam. Nulla quam massa,
+              faucibus id pretium ac, mattis eu velit. Donec sed risus a lacus
+              fringilla finibus.
+            </p>
+
+            <div
+              style={{
+                display: "flex",
+                alignSelf: "start",
+                alignItems: "center",
+                padding: "0.8rem 0",
+                // border: "1px solid black",
+              }}
+            >
+              <Avatar
+                alt="Joy"
+                src="/img/joy.jpg"
+                sx={{ marginRight: "0.7rem", border: "1px solid #F4511E" }}
+              />
+              <div style={{ marginBottom: "0" }}>
+                <h6
+                  style={{ margin: "0", fontSize: "0.9rem", fontWeight: "700" }}
+                >
+                  Joy Drah
+                </h6>
+                <p style={{ margin: "0", fontSize: "0.7rem" }}>
+                  Property Owner
+                </p>
+              </div>
             </div>
           </div>
+
           <div className={classes.navCircle}>
             <span style={{ backgroundColor: "#F4511E" }}></span>
             <span></span>

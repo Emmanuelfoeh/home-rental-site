@@ -28,7 +28,7 @@ const LifeStyle = () => {
               {/* <img src="/img/cleaning.png" alt="Cleaning" /> */}
             </div>
             <div className={classes.secondPicsContainer2}>
-              <p>roomates.png</p>
+              <p>Wonderful Roomates</p>
             </div>
 
             {/* <img src="/img/roomates.png" alt="roommates" /> */}

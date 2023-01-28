@@ -23,12 +23,14 @@ const Service = () => {
           <span className={classes.serviceHeaderLine}></span>
         </h4>
         <div className={classes.serviceContent}>
-          <img
+          <div className={classes.imageContainer}>
+            <img
             className={classes.serviceImage}
             src={`/img/serviceImg.png`}
             alt="serviceImg"
             loading="lazy"
           />
+          </div>
 
           <div className={classes.serviceItems}>
             <div className={classes.serviceItem}>

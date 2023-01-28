@@ -20,11 +20,15 @@ const useStyles = makeStyles()((theme) => {
       // gridTemplateColumns: "repeat(auto-fit,minmax(318px,1fr))",
       // gridTemplateRows: "repeat(6,1fr)",
       padding: "1rem 3rem",
+      [theme.breakpoints.down("sm")]: {
+        fontSize: "1rem",
+        padding: "1rem 1rem",
+      },
     },
 
     inputWrap: {
       display: "grid",
-      gridTemplateColumns: "repeat(auto-fit,minmax(318px,1fr))",
+      gridTemplateColumns: "repeat(auto-fit,minmax(300px,1fr))",
       columnGap: "1.5rem",
     },
     formLabel: {
@@ -51,9 +55,9 @@ const useStyles = makeStyles()((theme) => {
     },
 
     viewBtn: {
-      width:"32rem",
+      width: "32rem",
       backgroundColor: "#F4511E",
-      marginTop:"1rem",
+      marginTop: "1rem",
       padding: "0.8rem",
       "&:hover": {
         backgroundColor: "#c33306",
