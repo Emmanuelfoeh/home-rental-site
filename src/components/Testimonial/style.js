@@ -4,9 +4,15 @@ const useStyles = makeStyles()((theme) => {
   return {
     TestimonialContainer: {
       // height: "25.27rem",
+     
       backgroundColor: "rgba(244, 81, 30, 0.07)",
     },
     carouselTestContainer: {
+       display: "flex",
+      alignItems:"center",
+      columnGap:"2rem",
+      width: "85%",
+      margin: "0 auto",
       [theme.breakpoints.down("sm")]: {
         flexDirection: "column",
         alignItems: "center",
@@ -17,9 +23,11 @@ const useStyles = makeStyles()((theme) => {
     carousel: {
       display: "flex",
       flexDirection: "column",
+      alignItems: "center",
+      // backgroundColor: "red",
       flex: "60%",
       order: "2",
-      padding: "5rem 0",
+      padding: "1rem 0",
       height: "100%",
       [theme.breakpoints.down("sm")]: {
         width: "100%",
@@ -27,6 +35,8 @@ const useStyles = makeStyles()((theme) => {
       },
     },
     carouselInner: {
+      width: "60%",
+      position:"relative",
       [theme.breakpoints.down("sm")]: {
         width: "100%",
       },
@@ -39,6 +49,7 @@ const useStyles = makeStyles()((theme) => {
         },
       },
     },
+
     carouselQuote: {
       width: "30px",
       height: "30px",
@@ -48,12 +59,16 @@ const useStyles = makeStyles()((theme) => {
       left: "-0.8rem",
       zIndex: "-2",
       [theme.breakpoints.down("sm")]: {
-       top:"1rem",
-       left:"-2rem",
+        top: "1rem",
+        left: "-2rem",
         // backgroundColor:"green",
       },
     },
 
+activeCarousel: {
+  backgroundColor: "#F4511E !important",
+  cursor: "pointer",
+},
     TestVideo: {
       flex: "40%",
       order: "2",

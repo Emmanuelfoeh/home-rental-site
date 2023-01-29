@@ -7,6 +7,7 @@ const useStyles = makeStyles()((theme) => {
     card: {
       display: "flex",
       flexDirection: "column",
+      marginBottom:"5rem",
       boxShadow: "0px 4px 63px rgba(0, 0, 0, 0.15)",
 
       "& h3": {
